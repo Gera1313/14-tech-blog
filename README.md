@@ -93,3 +93,20 @@ Module 14 Zoom lecture and activities.
 ## License
   ### [MIT](https://choosealicense.com/licenses/mit/)
   ### [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+  14-tech-blog/
+  - Assets/
+  - config/
+  - controllers/
+    - homeRoutes.js
+    - index.js
+  - db/
+    - schema.sql
+  - models/
+  - public/
+    - css/
+    - js/
+  - utils/
+    - auth.js
+    - helpers.js
+  - views/
