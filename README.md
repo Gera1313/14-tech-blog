@@ -70,11 +70,13 @@ I will also need the [dotenv package](https://www.npmjs.com/package/dotenv) to u
 
 Behind on projects and the end of the course is here! Just started this one. Unfortunately, I will have to look at it again sometime after November 15 when I have more time and I'm in no pressure to complete assignments by Nov 15 and to prepare for a 3rd and final project. Stay tuned! 
 
+Removed password for now from DB_USER because I keep getting an "Access denied for user ''@'localhost' (using password: YES)" anyway. 
+
 ## Usage
 
 The following images show the CURRENT web application's appearance and functionality. Keep in mind this is a work in progress, it is NOT complete yet (see Notes above).
 
-![Insert screenshot here]() 
+![Error](./Assets/home.png) 
 
 ## Installations
 
@@ -88,7 +90,7 @@ This program has dependencies and requires their installation via ```npm install
 
 ## Credits
 
-Module 14 Zoom lecture and activities.
+Module 14 Zoom lecture and activities. Tutor Jere Wongani.
 
 ## License
   ### [MIT](https://choosealicense.com/licenses/mit/)
