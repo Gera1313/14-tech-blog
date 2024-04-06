@@ -85,10 +85,6 @@ This program has dependencies and requires their installation via ```npm install
 
 [Deployed Link](Insert here when available)
 
-## Credits
-
-Module 14 Zoom lecture and activities. Tutor Jere Wongani.
-
 ## License
   ### [MIT](https://choosealicense.com/licenses/mit/)
   ### [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
