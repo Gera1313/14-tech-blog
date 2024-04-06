@@ -71,7 +71,7 @@ April 6, 2024: Revisiting this project to fix all of the things wrong with it.
 
 ## Usage
 
-The following images show the CURRENT web application's appearance and functionality. Keep in mind this is a work in progress, it is NOT complete yet (see Notes above).
+The following images show the web application's appearance and functionality. Keep in mind this is a work in progress, it is NOT complete yet (see Notes above).
 
 ![Error](./Assets/home.png) 
 
