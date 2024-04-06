@@ -52,11 +52,9 @@ THEN I am able to view posts and comments but I am prompted to log in again befo
 
 ## Mock-Up
 
-The following demonstrates what the application should function like when finished:
+The following demonstrates the application's function:
 
 ![Animation cycles through signing into the app, clicking on buttons, and updating blog posts.](./Assets/14-mvc-homework-demo-01.gif) 
-
-This is the goal! 
 
 ## Getting Started
 
@@ -68,9 +66,7 @@ I will also need the [dotenv package](https://www.npmjs.com/package/dotenv) to u
 
 ## Notes
 
-Behind on projects and the end of the course is here! Just started this one. Unfortunately, I will have to look at it again sometime after November 15 when I have more time and I'm in no pressure to complete assignments by Nov 15 and to prepare for a 3rd and final project. Stay tuned! 
 
-Removed password for now from DB_USER because I keep getting an "Access denied for user ''@'localhost' (using password: YES)" anyway. 
 
 ## Usage
 
@@ -84,7 +80,7 @@ This program has dependencies and requires their installation via ```npm install
 
 ## Links
 
-[Repository](https://github.com/Gera1313/14-tech-blog)
+[Repository](https://github.com/Gera1313/tech-blog)
 
 [Deployed Link](Insert here when available)
 
