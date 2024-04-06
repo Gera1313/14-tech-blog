@@ -68,6 +68,25 @@ I used the [dotenv package](https://www.npmjs.com/package/dotenv) to use environ
 
 April 6, 2024: Revisiting this project to fix all of the things wrong with it. 
 
+## Technologies used
+
+Node.js: Runtime environment for executing server-side JavaScript code.
+
+Express: Web application framework for building RESTful APIs.
+
+Express-Handlebars: Template engine for rendering HTML templates.
+
+Express-Session: Middleware for managing user sessions.
+
+MySQL2: MySQL database driver for Node.js.
+
+Sequelize: Promise-based ORM for interacting with databases.
+
+Bcrypt: Library for securely hashing passwords.
+
+Dotenv: Utility for loading environment variables.
+
+Heroku: A cloud platform that offers easy deployment and management of web applications.
 
 ## Usage
 
