@@ -66,6 +66,7 @@ I will also need the [dotenv package](https://www.npmjs.com/package/dotenv) to u
 
 ## Notes
 
+April 6, 2024: Revisiting this project to fix all of the things wrong with it. 
 
 
 ## Usage
