@@ -25,7 +25,13 @@ const sess = {
 app.use(session(sess));
 
 // Set up Handlebars.js engine with custom helpers
-const hbs = exphbs.create({ helpers }); // finish the helpers
+const hbs = exphbs.create({
+  helpers: {
+      format_date: date => {
+          return `${date.getMonth() + 1}/${date.getDate()}/${date.getFullYear()}`;
+      }
+  }
+});
 
 // Sets up handlebars routes. Inform Express.js on which template engine to use
 app.engine('handlebars', hbs.engine);
@@ -36,12 +42,8 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));
 
 // Sets up routes
-app.use(routes);
+app.use(require('./controllers/'));
 
 sequelize.sync({ force: false }).then(() => {
-  app.listen(PORT, () => console.log('Now listening'));
+  app.listen(PORT, () => console.log(`http://localhost:${PORT}/login`));
 });
-
-// Redoing it above this. 
-const routes = require('./controllers');
-const helpers = require('./utils/helpers');
