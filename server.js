@@ -27,19 +27,21 @@ app.use(session(sess));
 // Set up Handlebars.js engine with custom helpers
 const hbs = exphbs.create({ helpers }); // finish the helpers
 
-// Redoing it above this. 
-const routes = require('./controllers');
-const helpers = require('./utils/helpers');
-
-
-
-// Inform Express.js on which template engine to use
+// Sets up handlebars routes. Inform Express.js on which template engine to use
 app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));
+
+// Redoing it above this. 
+const routes = require('./controllers');
+const helpers = require('./utils/helpers');
+
+
+
+
 
 app.use(routes);
 
