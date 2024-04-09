@@ -24,12 +24,12 @@ const sess = {
 
 app.use(session(sess));
 
+// Set up Handlebars.js engine with custom helpers
+const hbs = exphbs.create({ helpers }); // finish the helpers
+
 // Redoing it above this. 
 const routes = require('./controllers');
 const helpers = require('./utils/helpers');
-
-// Set up Handlebars.js engine with custom helpers
-const hbs = exphbs.create({ helpers });
 
 
 
