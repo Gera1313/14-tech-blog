@@ -35,16 +35,13 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));
 
-// Redoing it above this. 
-const routes = require('./controllers');
-const helpers = require('./utils/helpers');
-
-
-
-
-
+// Sets up routes
 app.use(routes);
 
 sequelize.sync({ force: false }).then(() => {
   app.listen(PORT, () => console.log('Now listening'));
 });
+
+// Redoing it above this. 
+const routes = require('./controllers');
+const helpers = require('./utils/helpers');
