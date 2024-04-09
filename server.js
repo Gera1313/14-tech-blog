@@ -11,21 +11,10 @@ const PORT = process.env.PORT || 3001;
 const sequelize = require('./config/connection');
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
 
-// Redoing it above this. 
-const routes = require('./controllers');
-const helpers = require('./utils/helpers');
-
-// Set up Handlebars.js engine with custom helpers
-const hbs = exphbs.create({ helpers });
-
+// Sets up my session with cookies
 const sess = {
   secret: 'Super secret secret',
-  cookie: {
-    maxAge: 300000,
-    httpOnly: true,
-    secure: false,
-    sameSite: 'strict',
-  },
+  cookie: {},
   resave: false,
   saveUninitialized: true,
   store: new SequelizeStore({
@@ -34,6 +23,15 @@ const sess = {
 };
 
 app.use(session(sess));
+
+// Redoing it above this. 
+const routes = require('./controllers');
+const helpers = require('./utils/helpers');
+
+// Set up Handlebars.js engine with custom helpers
+const hbs = exphbs.create({ helpers });
+
+
 
 // Inform Express.js on which template engine to use
 app.engine('handlebars', hbs.engine);
