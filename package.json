@@ -1,5 +1,5 @@
 {
-  "name": "14-tech-blog",
+  "name": "tech-blog",
   "version": "1.0.0",
   "description": "tech blog",
   "main": "server.js",
@@ -27,9 +27,9 @@
   "author": "Gerardo Perez",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Gera1313/14-tech-blog/issues"
+    "url": "https://github.com/Gera1313/tech-blog/issues"
   },
-  "homepage": "https://github.com/Gera1313/14-tech-blog#readme",
+  "homepage": "https://github.com/Gera1313/tech-blog#readme",
   "dependencies": {
     "bcrypt": "^5.1.1",
     "connect-session-sequelize": "^7.1.7",
