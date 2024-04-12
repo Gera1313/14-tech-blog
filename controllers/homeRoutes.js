@@ -8,19 +8,14 @@ router.get('/', async (req, res) => {
     const postData = await Post.findAll({
       include: [
         {
-          model: User,
-          attributes: ['username'],
+          model: User
         },
-        {
-          model: Comment,
-          attributes: ['content'],
-        },
-      ],
+      ]
     });
 
     const posts = postData.map((post) => post.get({ plain: true }));
 
-    res.render('homepage', { posts, loggedIn: req.session.logged_in });
+    res.render('all-posts', { posts });
   } catch (err) {
     res.status(500).json(err);
   }
