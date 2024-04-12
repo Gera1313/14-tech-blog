@@ -32,23 +32,16 @@ router.get('/login', (req, res) => {
 });
 
 // Route to display an individual post
-router.get('/post/:id', async (req, res) => {
-  try {
-    const postData = await Post.findByPk(req.params.id, {
+router.get('/post/:id', (req, res) => {
+  Post.findByPk(req.params.id, {
       include: [
-        {
-          model: User,
-          attributes: ['username'],
-        },
+          User,
         {
           model: Comment,
-          include: {
-            model: User,
-            attributes: ['username'],
+          include: [User],
           },
-        },
       ],
-    });
+    })
 
     if (!postData) {
       res.status(404).json({ message: 'No post found with this id' });
