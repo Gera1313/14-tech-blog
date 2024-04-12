@@ -32,7 +32,14 @@ router.get('/login', (req, res) => {
 });
 
 // Redirects to another route
-router.get 
+router.get("/signup", (req, res) => {
+  if (req.session.loggedIn) {
+    res.redirect("/");
+    return;
+  }
+
+  res.render("signup");
+});
 
 // Route to display an individual post
 router.get('/post/:id', (req, res) => {
