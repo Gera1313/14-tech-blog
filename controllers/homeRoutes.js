@@ -23,13 +23,16 @@ router.get('/', async (req, res) => {
 
 // Route to display the login page
 router.get('/login', (req, res) => {
-    if (req.session.logged_in) {
-        res.redirect('/homepage');
+    if (req.session.loggedIn) {
+        res.redirect('/');
         return;
     }
 
     res.render('login');
 });
+
+// Redirects to another route
+router.get 
 
 // Route to display an individual post
 router.get('/post/:id', (req, res) => {
