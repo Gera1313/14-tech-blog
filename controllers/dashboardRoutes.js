@@ -10,6 +10,13 @@ router.get("/", withAuth, (req, res) => {
     .then(dbPostData => {
         const posts = dbPostData.map((post) => post.get({ plain: true }));
 
-        res.render
+        res.render("all-posts-admin", {
+            layout: "dashboard",
+            posts
+        });
     })
-})
+    .catch(err => {
+        console.log(err);
+        res.redirect("login");
+    });
+});
