@@ -20,3 +20,14 @@ router.get("/", withAuth, (req, res) => {
         res.redirect("login");
     });
 });
+
+// Gets the route to edit the post
+router.get("/edit/:id", withAuth, (req, res) => {
+    Post.findByPk(req.params.id)
+    .then(dbPostData => {
+        if (dbPostData) {
+            const post = dbPostData.get({ plain: true });
+            
+        }
+    })
+})
