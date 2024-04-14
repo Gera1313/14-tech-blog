@@ -28,6 +28,17 @@ router.get("/edit/:id", withAuth, (req, res) => {
         if (dbPostData) {
             const post = dbPostData.get({ plain: true });
             
+            res.render("edit-post", {
+                layout: "dashboard",
+                post
+            });
+        } else {
+            res.status(404).end();
         }
     })
-})
+    .catch(err => {
+        res.status(500).json(err);
+    });
+});
+
+module.exports = router;
