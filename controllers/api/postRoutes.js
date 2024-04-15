@@ -13,3 +13,12 @@ router.post("/", withAuth, (req, res) => {
         res.status(500).json(err);
     });
 });
+
+router.put("/:id", withAuth, (req, res) => {
+    Post.update(req.body, {
+        where: {
+            id: req.params.id
+        }
+    })
+    .then // left here
+})
