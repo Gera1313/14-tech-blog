@@ -38,5 +38,16 @@ router.delete("/:id", withAuth, (req, res) => {
             id: req.params.id
         }
     })
-    .then
-})
+    .then(affectedRows => {
+        if (affectedRows > 0) {
+            res.status(200).end();
+        } else {
+            res.status(404).end();
+        }
+    })
+    .catch(err => {
+        res.status(500).json(err);
+    });
+});
+
+module.exports = router;
