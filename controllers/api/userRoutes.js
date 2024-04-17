@@ -6,5 +6,13 @@ router.post("/", (req, res) => {
         username: req.body.username,
         password: req.body.password
     })
-    .then //hereeeeeeee
+    .then(dbUserData => {
+        req.session.save(() => {
+            req.session.userId = dbUserData.id;
+            req.session.username = dbUserData.username;
+            req.session.loggedIn = true;
+
+            res.json(dbUserData);
+        });
+    })
 })
