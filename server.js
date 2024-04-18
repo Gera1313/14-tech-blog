@@ -50,7 +50,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));
 
 // Sets up routes
-app.use(require('./controllers/'));
+app.use(require('./controllers'));
 
 sequelize.sync({ force: false }).then(() => {
   app.listen(PORT, () => console.log(`http://localhost:${PORT}/login`));
