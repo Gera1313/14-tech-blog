@@ -29,22 +29,23 @@ User.init(
       }
   },
   {
+    hooks: {
+        async beforeCreate(newUserData) {
+            newUserData.password = await bcrypt.hash(newUserData.password, 10);
+            return newUserData;
+        },
+
+        async beforeUpdate(updatedUserData) {
+            updatedUserData.password = await bcrypt.hash(updatedUserData.password, 10);
+            return updatedUserData;
+        }
+    },
     sequelize,
-    timestamps: true,
+    timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'user',
-    hooks: {
-      beforeCreate: async (user) => {
-        user.password = await bcrypt.hash(user.password, 10);
-      },
-      beforeUpdate: async (user) => {
-        if (user.changed('password')) {
-          user.password = await bcrypt.hash(user.password, 10);
-        }
-      },
-    },
-  }
+    modelName: 'User'
+}
 );
 
 module.exports = User;
