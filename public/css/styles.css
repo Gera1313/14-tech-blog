@@ -5,3 +5,13 @@
     --dark: #000000;
     --border-radius: 0.2rem;
 }
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--primary);
+    margin: 0;
+    padding: 0;
+}
