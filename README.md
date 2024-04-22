@@ -92,7 +92,7 @@ Heroku: A cloud platform that offers easy deployment and management of web appli
 
 The following images show the web application's appearance and functionality. Keep in mind this is a work in progress, it is NOT complete yet (see Notes above).
 
-![Error](./Assets/home.png) 
+![Error]() 
 
 ## Installations
 
