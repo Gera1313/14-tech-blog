@@ -41,4 +41,12 @@ router.get("/edit/:id", withAuth, (req, res) => {
     });
 });
 
+// Route for creating a new post
+router.get("/new", withAuth, (req, res) => {
+    console.log("Reached /new route");
+    res.render("new-post", {
+        layout: "dashboard"
+    });
+});
+
 module.exports = router;
