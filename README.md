@@ -54,7 +54,13 @@ THEN I am able to view posts and comments but I am prompted to log in again befo
 
 The following demonstrates the application's function:
 
-![Signing into the app, clicking on buttons, and updating blog posts.]() 
+![Signing into the app, clicking on buttons, and updating blog posts.](./Assets/home.png) 
+
+![Signing into the app, clicking on buttons, and updating blog posts.](./Assets/newpost.png)
+
+![Signing into the app, clicking on buttons, and updating blog posts.](./Assets/totalpost.png)
+
+![Signing into the app, clicking on buttons, and updating blog posts.](./Assets/logout.png)
 
 ## Technologies Used
 
