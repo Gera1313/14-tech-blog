@@ -1,9 +1,9 @@
 const router = require('express').Router();
 
 // Import and use the routes defined in other files
-const homeRoutes = require('./homeRoutes'); // Do I need .js?
-const apiRoutes = require('./api/');
-const dashboardRoutes = require('./dashboardRoutes'); // Do I need .js? 
+const homeRoutes = require('./homeRoutes.js');
+const apiRoutes = require('./api/index');
+const dashboardRoutes = require('./dashboardRoutes.js');
 
 router.use('/', homeRoutes);
 router.use('/dashboard', dashboardRoutes);
