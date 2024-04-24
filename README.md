@@ -54,23 +54,15 @@ THEN I am able to view posts and comments but I am prompted to log in again befo
 
 The following demonstrates the application's function:
 
-![Animation cycles through signing into the app, clicking on buttons, and updating blog posts.]() 
+![Signing into the app, clicking on buttons, and updating blog posts.]() 
 
-## Getting Started
+## Technologies Used
 
 The application’s folder structure follows the Model-View-Controller paradigm. I used the [express-handlebars](https://www.npmjs.com/package/express-handlebars) package to implement Handlebars.js for the Views, used the [MySQL2](https://www.npmjs.com/package/mysql2) and [Sequelize](https://www.npmjs.com/package/sequelize) packages to connect to a MySQL database for the Models, and created an Express.js API for the Controllers.
 
 I used the [dotenv package](https://www.npmjs.com/package/dotenv) to use environment variables, the [bcrypt package](https://www.npmjs.com/package/bcrypt) to hash passwords, and the [express-session](https://www.npmjs.com/package/express-session) and [connect-session-sequelize](https://www.npmjs.com/package/connect-session-sequelize) packages to add authentication.
 
 **Note**: The [express-session](https://www.npmjs.com/package/express-session) package stores the session data on the client in a cookie. When you are idle on the site for more than a set time, the cookie will expire and you will be required to log in again to start a new session. This is the default behavior and you do not have to do anything to your application other than implement the npm package.
-
-## Notes
-
-April 6, 2024: Revisiting this project to fix all of the things wrong with it. 
-
-April 23, 2024: Finished all of the fixes. 
-
-## Technologies used
 
 Node.js: Runtime environment for executing server-side JavaScript code.
 
@@ -88,17 +80,17 @@ Bcrypt: Library for securely hashing passwords.
 
 Dotenv: Utility for loading environment variables.
 
-Heroku: A cloud platform that offers easy deployment and management of web applications.
-
-## Usage
-
-The following images show the web application's appearance and functionality. Keep in mind this is a work in progress, it is NOT complete yet (see Notes above).
-
-![Error]() 
+Heroku: A cloud platform that offers easy deployment and management of web applications. 
 
 ## Installations
 
 This program has dependencies and requires their installation via ```npm install```. This project has a server component that can be invoked via Node at the command prompt using ```npm start```
+
+## Notes
+
+April 6, 2024: Revisiting this project to fix all of the things wrong with it. 
+
+April 23, 2024: Finished all of the fixes.
 
 ## Links
 
