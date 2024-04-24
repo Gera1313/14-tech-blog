@@ -68,6 +68,8 @@ I used the [dotenv package](https://www.npmjs.com/package/dotenv) to use environ
 
 April 6, 2024: Revisiting this project to fix all of the things wrong with it. 
 
+April 23, 2024: Finished all of the fixes. 
+
 ## Technologies used
 
 Node.js: Runtime environment for executing server-side JavaScript code.
