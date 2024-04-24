@@ -96,7 +96,7 @@ This program has dependencies and requires their installation via ```npm install
 
 April 6, 2024: Revisiting this project to fix all of the things wrong with it. 
 
-April 23, 2024: Finished all of the fixes.
+April 23, 2024: Finished all of the fixes. Deploying to Heroku.
 
 ## Links
 
