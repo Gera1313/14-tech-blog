@@ -96,13 +96,15 @@ This program has dependencies and requires their installation via ```npm install
 
 April 6, 2024: Revisiting this project to fix all of the things wrong with it. 
 
-April 23, 2024: Finished all of the fixes. Deploying to Heroku.
+April 23, 2024: Finished all of the fixes. 
+
+April 24, 2024: Deployed to Heroku successfully. 
 
 ## Links
 
 [Repository](https://github.com/Gera1313/tech-blog)
 
-[Deployed Link](Insert here when available)
+[Deployed Link](https://radiant-harbor-32410-4d76770b0899.herokuapp.com/)
 
 ## License
   ### [MIT](https://choosealicense.com/licenses/mit/)
